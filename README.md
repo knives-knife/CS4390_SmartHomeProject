@@ -1,4 +1,6 @@
-# CS4390_SmartHomeProjectThe topic for the project this semester is to design and implement a network protocol for remote smart-home management.
+# CS4390_SmartHomeProject
+
+The topic for the project this semester is to design and implement a network protocol for remote smart-home management. Here is my (overengineered) solution.
 
 ## Requirements:
 
