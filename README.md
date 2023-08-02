@@ -48,4 +48,5 @@ Let me or the TA know if there is any questions or comments.
 3. Start Mininet with the default topology (`sudo mn`) (default topology is two host connected by a switch)
 4. On host 1, start the server in the background by running the command `h1 python3 server.py &`
 5. On host 2, start the client by running the command `h2 python3 client.py`
+<br>
 A video explaining the functionalities of the client has been provided. 
