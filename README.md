@@ -2,6 +2,8 @@
 
 The topic for the project this semester is to design and implement a network protocol for remote smart-home management. Here is my (overengineered) solution.
 
+# Project Description
+
 ## Requirements:
 
 - Design an application layer protocol for two network entities: client (C) and server (S) to communicate. The protocol should be text-based and well documented. You should start designing and documenting the protocol before implementing a network application that uses this protocol. A protocol specification (refer to one of the RFCs on the IETF's web page for information on protocol documentation) must be submitted at the end of the project.
@@ -38,3 +40,12 @@ At the end of the semester, submit a ZIP file named MP_<first name>_l<ast name>.
 5. A design document describing your implementation of the network application.
 
 Let me or the TA know if there is any questions or comments.
+
+# How to Run
+
+1. Make sure you have the Mininet VM installed and on your Mininet VM you have Python 3 (I used Python 3.6.9)
+2. Upload the Python files to Mininet's default directory (should be `/home/mininet` for the default Mininet VM)
+3. Start Mininet with the default topology (`sudo mn`) (default topology is two host connected by a switch)
+4. On host 1, start the server in the background by running the command `h1 python3 server.py &`
+5. On host 2, start the client by running the command `h2 python3 client.py`
+A video explaining the functionalities of the client has been provided. 
