@@ -1,6 +1,6 @@
 # CS4390_SmartHomeProject
 
-The topic for the project this semester is to design and implement a network protocol for remote smart-home management. Here is my (overengineered) solution.
+The topic for the project this semester is to design and implement a network protocol for remote smart-home management. Here is my (slightly overengineered) solution.
 
 # Project Description
 
@@ -45,8 +45,12 @@ Let me or the TA know if there is any questions or comments.
 
 1. Make sure you have the Mininet VM installed and on your Mininet VM you have Python 3 (I used Python 3.6.9)
 2. Upload the Python files to Mininet's default directory (should be `/home/mininet` for the default Mininet VM)
-3. Start Mininet with the default topology (`sudo mn`) (default topology is two host connected by a switch)
-4. On host 1, start the server in the background by running the command `h1 python3 server.py &`
+3. Start Mininet with the default topology (`sudo mn`) (default topology is two hosts connected by a switch)
+4. On host 1, start the server in the background by running the command `h1 python3 server.py &` (h1 must be the host because the IP address of the server is hardcoded as 10.0.0.1)
 5. On host 2, start the client by running the command `h2 python3 client.py`
+6. When you're done, don't forget to kill the background process on h1 if the server is still running with the command `h1 kill %python`. Also don't forget to clean Mininet with the command `mn -c`. 
+
 <br>
 A video explaining the functionalities of the client has been provided. 
+<br><br>
+Happy Coding!
